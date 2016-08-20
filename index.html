@@ -14,20 +14,20 @@
 
 function calculateFizzBuzz() {
 
-var number = document.buzzfizz.Form.number.value
+var number = document.FizzBuzz.Form.number.value
 
 if(number / 3 == 0 && number / 5 == 0){
-document.buzzfizz.Form.number.value= "FizzBuzz"
+document.FizzBuzz.Form.number.value = "FizzBuzz"
 }
 
-if(number / 3==0){
-document.buzzfizz.Form.number.value= "Fizz"
+if(number / 5==0){
+document.FizzBuzz.Form.number.value = "Fizz"
 
 }
 
 if(number / 5==0){
 
-document.bmiForm.meaning.value = "Buzz"
+document.FizzBuzz.Form.number.value = "Buzz"
 
 }
 
@@ -57,7 +57,7 @@ h1   {color: blue;}
 
 <body>
 
-    <form name="bmiForm">
+    <form name="FizzBuzz">
 
 Fill in a number: <input type="text" name="number" size="10"><br />
 
