@@ -4,35 +4,30 @@
   <h1>FizzBuzz-machine</h1>
   <p>Write a number between 1-100
     and let the FizzBuzz-machine tell you if it is Fizz, Buzz or FizzBuzz.</p>
-
-  <p
-
-
-  id="answer"></p>
-
-
-
 </head>
 
 <script language="JavaScript">
-function calculateFizzBuzz() {
-  var i
-  var answer
-
+  function calculateFizzBuzz() {
+    for (var i=1;i<=100;i++){
+    if(i%3 === 0)
+  //    document.getElementById("answer")== "Fizz"
+      {document.FizzBuzz.form.answer.value ==  'Fizz';
   }
-  for (var i=1;i<=100;i++){
-    if(i%3 === 0){document.getElementById("answer").innerHTML = 'Fizz';
-
+    if(i%5 === 0){
+  //    document.getElementById("answer")== "Buzz"
+      document.FizzBuzz.form.answer.value == 'Buzz';
   }
-    if(i%5 === 0){document.getElementById("answer").innerHTML = 'Buzz';
-
-  }
-    if(i%15 === 0){document.getElementById("answer").innerHTML = 'FizzBuzz';
+    if(i%15 === 0){
+  //    document.getElementById("answer")== "FizzBuzz"
+      document.FizzBuzz.form.answer.value == 'FizzBuzz';
   }
   else{
-    alert ('No that number is not dividable with 3 or 5. Try again.');
+  //  document.getElementById("answer")== "Try again"
+    document.FizzBuzz.form.answer.value == 'Try again';
   }
+}
 };
+
 </script>
 
 <style>
@@ -46,12 +41,12 @@ h1   {color: blue;}
 
 <form name="FizzBuzz">
 
-Fill in a number: <input type="text" name="i" size="10"><br />
-
+Fill in a number: <input type="text" name="i" size="10"/>
+Your result: <input type="text" name="answer"" size="50"><br />
 <input type="button" value="Calculate" onClick="calculateFizzBuzz()"><br />
-
 <input type="reset" value="Reset" />
  </form>
+
 
   </body>
 
